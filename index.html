@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari Prasath | Senior Programmer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
     <meta name="description" content="Portfolio of Hari Prasath - Full Stack Developer & IoT Specialist">
-    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
@@ -54,7 +52,7 @@
         }
     </script>
 
-    <style type="text/tailwindcss">
+    <style>
         /* Custom Utilities */
         body {
             background-color: #020617;
@@ -131,17 +129,18 @@
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <div id="nav-logo" class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo(0,0)">
                     <span class="text-2xl font-bold tracking-tighter text-white">HP<span class="text-primary">.</span></span>
                 </div>
                 
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#about" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#skills" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-                        <a href="#experience" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#home" class="nav-link text-primary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link text-slate-300 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="nav-link text-slate-300 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#experience" class="nav-link text-slate-300 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#certifications" class="nav-link text-slate-300 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Certifications</a>
                         <a href="#contact" class="px-5 py-2.5 bg-primary hover:bg-blue-600 text-white rounded-full text-sm font-medium transition-all shadow-lg shadow-blue-500/25">Contact Me</a>
                     </div>
                 </div>
@@ -158,10 +157,11 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden glass-nav border-t border-slate-800">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#about" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#skills" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Skills</a>
-                <a href="#experience" class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#home" class="mobile-nav-link text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="mobile-nav-link text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#skills" class="mobile-nav-link text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#experience" class="mobile-nav-link text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#certifications" class="mobile-nav-link text-slate-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Certifications</a>
                 <a href="#contact" class="text-primary font-bold block px-3 py-2 rounded-md text-base">Contact Me</a>
             </div>
         </div>
@@ -202,8 +202,8 @@
                 </div>
 
                 <div class="mt-12 flex items-center justify-center lg:justify-start gap-6 text-slate-500">
-                    <a href="#" class="hover:text-white transition-colors text-2xl"><i class="fab fa-github"></i></a>
-                    <a href="#" class="hover:text-white transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/HariPrasath-25" class="hover:text-white transition-colors text-2xl"><i class="fab fa-github" target="_blank"></i></a>
+                    <a href="http://www.linkedin.com/in/HP-Dev" class="hover:text-white transition-colors text-2xl"><i class="fab fa-linkedin" target="_blank"></i></a>
                     <a href="mailto:prasathhari256@gmail.com" class="hover:text-white transition-colors text-2xl"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
@@ -216,9 +216,9 @@
                     
                     <!-- Avatar Container -->
                     <div class="absolute inset-4 rounded-full bg-gradient-to-tr from-slate-800 to-slate-900 border-4 border-slate-800 shadow-2xl overflow-hidden flex items-center justify-center">
-                        <span class="text-8xl font-bold text-slate-700 select-none">HP</span>
+                        <!-- <span class="text-8xl font-bold text-slate-700 select-none">HP</span> -->
                         <!-- Replace the span above with this img tag when you have the photo -->
-                        <!-- <img src="hari-prasath.jpg" alt="Hari Prasath" class="w-full h-full object-cover"> -->
+                        <img src="image.png" alt="Hari Prasath" class="w-full h-full object-cover">
                     </div>
 
                     <!-- Floating Tech Badges -->
@@ -292,6 +292,8 @@
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4">Frontend</h3>
                     <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">TypeScript</span>
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">React.js</span>
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Next.js</span>
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Angular</span>
@@ -309,6 +311,7 @@
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Node.js</span>
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Express</span>
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Python</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">PHP</span>
                     </div>
                 </div>
 
@@ -320,8 +323,8 @@
                     <h3 class="text-xl font-bold text-white mb-4">Data</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">MySQL</span>
-                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">ETL Pipelines</span>
-                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">SQL Tuning</span>
+                        <!-- <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">ETL Pipelines</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">SQL Tuning</span> -->
                     </div>
                 </div>
 
@@ -333,8 +336,9 @@
                     <h3 class="text-xl font-bold text-white mb-4">Specialized</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">IoT Integration</span>
-                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">TypeScript</span>
-                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Automation</span>
+                        <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">IOT Dashboard</span>
+                        <!-- <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">JavaScript</span> -->
+                        <!-- <span class="px-3 py-1 bg-slate-800 text-xs text-slate-300 rounded-full border border-slate-700">Automation</span> -->
                     </div>
                 </div>
             </div>
@@ -361,7 +365,7 @@
                             <h3 class="text-xl font-bold text-white">Senior Programmer</h3>
                             <h4 class="text-lg text-slate-400">Omniconn</h4>
                             <div class="text-sm text-slate-500 flex items-center md:justify-end gap-1 mt-1">
-                                <i class="fas fa-map-marker-alt"></i> Abu Dhabi, UAE
+                                <i class="fas fa-map-marker-alt"></i> Remote, India
                             </div>
                         </div>
                         <div class="glass-card p-6 rounded-xl border-l-4 border-primary md:border-l-0 md:border-t-4 relative">
@@ -434,6 +438,91 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 relative bg-gradient-to-b from-dark to-darker">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Certifications</h2>
+                <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Continuous learning and skill development</p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto reveal">
+                <!-- Carousel Navigation (Left) -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-20 w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-white flex items-center justify-center hover:bg-primary transition-colors focus:outline-none shadow-lg opacity-50 hover:opacity-100 hidden md:flex">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Carousel Container -->
+                <div id="cert-carousel" class="flex overflow-x-auto gap-6 snap-x snap-mandatory scroll-hidden py-8 px-4">
+                    
+                    <!-- Certificate Card 1 (React Udemy) -->
+                    <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center">
+                        <div class="h-full glass-card p-8 rounded-2xl hover:border-primary/50 transition-all group relative overflow-hidden flex flex-col">
+                            <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                                <i class="fas fa-certificate text-9xl text-white"></i>
+                            </div>
+                            
+                            <div class="relative z-10 flex-grow">
+                                <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform shadow-lg shadow-purple-900/20">
+                                    <i class="fab fa-react text-2xl"></i>
+                                </div>
+                                
+                                <h3 class="text-xl font-bold text-white mb-2 leading-tight">React - The Complete Guide 2025</h3>
+                                <p class="text-slate-400 text-sm mb-1">(incl. Next.js, Redux)</p>
+                                <div class="text-xs text-slate-500 font-mono mb-4 border-l-2 border-slate-700 pl-2 mt-2">
+                                    Issued by Udemy<br>
+                                    Dec 11, 2025
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-4 border-t border-slate-700/50">
+                                <a href="https://ude.my/UC-c6927bc2-b22d-43c4-9ada-231ba9eba248" target="_blank" class="inline-flex items-center text-primary hover:text-white transition-colors text-sm font-medium group-hover:translate-x-1 duration-300">
+                                    View Credential <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dummy Card (Next in Progress) -->
+                    <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center">
+                        <div class="h-full bg-slate-800/30 border-2 border-dashed border-slate-700 p-8 rounded-2xl relative overflow-hidden flex flex-col justify-center items-center text-center group hover:border-slate-500 transition-colors">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-4 relative">
+                                    <span class="absolute inset-0 rounded-full border border-slate-600 animate-ping opacity-20"></span>
+                                    <i class="fas fa-spinner fa-spin text-2xl text-slate-400 group-hover:text-primary transition-colors"></i>
+                                </div>
+                                
+                                <h3 class="text-lg font-bold text-slate-300 mb-2">Next Certificate in Progress</h3>
+                                <p class="text-slate-500 text-sm max-w-xs mx-auto mb-4">
+                                    Currently mastering CSS to build even more attractive and responsive web
+                                    solutions.
+                                </p>
+                                <span class="inline-block px-3 py-1 bg-slate-800 text-xs text-slate-400 rounded-full border border-slate-700">
+                                    Coming Soon
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Navigation (Right) -->
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-20 w-10 h-10 rounded-full bg-slate-800 border border-slate-700 text-white flex items-center justify-center hover:bg-primary transition-colors focus:outline-none shadow-lg opacity-50 hover:opacity-100 hidden md:flex">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Pagination Dots -->
+                <div class="flex justify-center gap-3 mt-2" id="carousel-dots">
+                    <!-- Dots will be generated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 relative">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -472,9 +561,24 @@
         // 1. Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
+        const logo = document.getElementById('nav-logo');
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when logo is clicked
+        logo.addEventListener('click', () => {
+            if (!menu.classList.contains('hidden')) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when any link inside it is clicked
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
         });
 
         // 2. Typewriter Effect
@@ -484,6 +588,7 @@
 
         function typeWriter() {
             const heading = document.getElementById("typewriter");
+            if (!heading) return;
             const word = words[i];
             let j = 0;
             let isDeleting = false;
@@ -542,6 +647,101 @@
             } else {
                 nav.classList.remove('shadow-lg');
             }
+        });
+
+        // 5. Carousel Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('cert-carousel');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (!carousel || !dotsContainer) return;
+
+            // Count items based on direct children
+            const items = carousel.children;
+            const itemCount = items.length;
+
+            // Generate Dots
+            for (let k = 0; k < itemCount; k++) {
+                const dot = document.createElement('button');
+                dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${k === 0 ? 'bg-primary w-6' : 'bg-slate-700 hover:bg-slate-500'}`;
+                dot.ariaLabel = `Go to slide ${k + 1}`;
+                dot.onclick = () => {
+                    items[k].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                };
+                dotsContainer.appendChild(dot);
+            }
+
+            // Update dots on scroll
+            const updateDots = () => {
+                const scrollLeft = carousel.scrollLeft;
+                const itemWidth = items[0].offsetWidth; // Approximate width
+                const activeIndex = Math.round(scrollLeft / itemWidth);
+
+                Array.from(dotsContainer.children).forEach((dot, idx) => {
+                    if (idx === activeIndex) {
+                        dot.classList.remove('bg-slate-700', 'hover:bg-slate-500', 'w-2');
+                        dot.classList.add('bg-primary', 'w-6');
+                    } else {
+                        dot.classList.add('bg-slate-700', 'hover:bg-slate-500', 'w-2');
+                        dot.classList.remove('bg-primary', 'w-6');
+                    }
+                });
+            };
+
+            carousel.addEventListener('scroll', updateDots);
+            
+            // Initial update to set first dot active
+            updateDots(); 
+
+            // Button Navigation
+            if(prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -carousel.offsetWidth / 2, behavior: 'smooth' });
+                });
+                nextBtn.addEventListener('click', () => {
+                    carousel.scrollBy({ left: carousel.offsetWidth / 2, behavior: 'smooth' });
+                });
+            }
+        });
+
+        // 6. Active Nav Link Logic (Scroll Spy)
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                // Offset of 250px to trigger specific section earlier
+                if (window.scrollY >= (sectionTop - 250)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            // Update Desktop Links
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-slate-300');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-primary');
+                    link.classList.remove('text-slate-300');
+                }
+            });
+
+            // Update Mobile Links
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-slate-300');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-primary');
+                    link.classList.remove('text-slate-300');
+                }
+            });
         });
     </script>
 </body>
